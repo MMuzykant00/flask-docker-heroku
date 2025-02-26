@@ -1,46 +1,45 @@
 # Flask Docker App 🚀
 
-![Demo](demo.gif)
+A simple Flask web application running inside a Docker container. This project provides a basic example of how to deploy a Flask application using Docker and is ready for deployment on Heroku.
 
-Prosty projekt aplikacji Flask działającej w kontenerze Docker.
+![Demo GIF](gif/demo.gif)
 
-## 📌 Jak uruchomić aplikację
+## 📌 How to Run the Application
 
-1. **Sklonuj repozytorium**
+1. **Clone the repository**
    ```sh
    git clone https://github.com/MMuzykant00/flask-docker-heroku.git
    cd flask-docker-heroku
    ```
 
-2. **Zbuduj obraz Dockera**
+2. **Build the Docker image**
    ```sh
    docker build -t flask-app .
    ```
 
-3. **Uruchom kontener**
+3. **Run the container**
    ```sh
    docker run -d -p 5000:5000 --name flask-container flask-app
    ```
 
-4. **Sprawdź aplikację**
-   Otwórz w przeglądarce:
+4. **Check the application**
+   Open your browser and visit:
    ```
    http://localhost:5000/hello
    ```
 
-## 🎥 Prezentacja działania
-![Demo GIF](Presentation.gif)
-
-## 🔥 Zarządzanie kontenerem
-- **Zatrzymanie kontenera:**
+## 🔥 Managing the Container
+- **Stop the container:**
   ```sh
   docker stop flask-container
   ```
-- **Usunięcie kontenera:**
+- **Remove the container:**
   ```sh
   docker rm flask-container
   ```
-- **Usunięcie obrazu:**
+- **Remove the Docker image:**
   ```sh
   docker rmi flask-app
   ```
+
+
