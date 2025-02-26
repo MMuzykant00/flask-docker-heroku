@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Say Hello </title>
-		<link rel ="stylesheet" href="{{
-		url_for('static', filename='css/main.css')}}">
-	</head>
-	<body>
-		<img src = "https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png"/>
-		<br>
-		<form action="greet" method="post">
-			{% for message in get_flashed_messages()%}
-				<p> {{message}} </p>
-			{% endfor %}
-			<br> 
-			<input type="text" name="name_input">
-			<br>
-			<input type="submit" value="GREET" id ="greet">
-		</form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Say Hello</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="https://raw.githubusercontent.com/MariyaSha/SimpleGreetingApp/main/logo.png" alt="Logo">
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        
+        <form action="/greet" method="post">
+            <input type="text" name="name_input" placeholder="Enter your name">
+            <button type="submit">GREET</button>
+        </form>
+    </div>
+</body>
 </html>
