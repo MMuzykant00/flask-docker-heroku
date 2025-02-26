@@ -1,6 +1,6 @@
 # Flask Docker App 🚀
 
-A simple Flask web application running inside a Docker container. This project provides a basic example of how to deploy a Flask application using Docker and is ready for deployment on Heroku.
+A simple Flask web application running inside a Docker container. This project provides a basic example of how to deploy a Flask application using Docker and is ready for deployment on Heroku or Render.
 
 ![Demo GIF](gif/Presentation.gif)
 
@@ -27,6 +27,14 @@ A simple Flask web application running inside a Docker container. This project p
    ```
    http://localhost:5000/hello
    ```
+# Flask App Deployed on Render
+
+This Flask app is deployed on Render. Access it here:
+👉 [https://flask-app-lqoh.onrender.com](https://flask-app-lqoh.onrender.com)
+
+## Available Routes
+- `/` - Home page (redirects to /hello)
+- `/hello` - Returns a greeting message
 
 ## 🔥 Managing the Container
 - **Stop the container:**
