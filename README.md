@@ -1,6 +1,6 @@
 # Flask Docker App 🚀
 
-A simple Flask web application running inside a Docker container. This project provides a basic example of how to deploy a Flask application using Docker and is ready for deployment on Heroku.
+A simple Flask web application running inside a Docker container. This project provides a basic example of how to deploy a Flask application using Docker and is ready for deployment on Heroku or Render.
 
 ![Demo GIF](gif/Presentation.gif)
 
