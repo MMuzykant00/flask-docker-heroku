@@ -20,4 +20,5 @@ db.sqlite3-journal
 docker-compose.override.yml
 
 flask-docker-heroku/
+echo "__pycache__/" >> .gitignore
 

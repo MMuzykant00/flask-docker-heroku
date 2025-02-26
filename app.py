@@ -3,6 +3,10 @@ from flask import Flask, render_template, request, flash
 app = Flask(__name__)
 app.secret_key = "aspartam_sugar"
 
+@app.route("/")
+def home():
+    return "Welcome to my Flask app! Try /hello for a greeting."
+
 @app.route("/hello")
 def index():
 	flash("what's  your name?")
