@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # Instalacja zależności
-RUN pip install --no-cache-dir -r requirments.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Ustawienie zmiennej środowiskowej dla Flask
 ENV FLASK_APP=app.py
