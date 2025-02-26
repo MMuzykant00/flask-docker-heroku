@@ -1,5 +1,7 @@
 # Flask Docker App 🚀
 
+![Demo](demo.gif)
+
 Prosty projekt aplikacji Flask działającej w kontenerze Docker.
 
 ## 📌 Jak uruchomić aplikację
@@ -25,6 +27,9 @@ Prosty projekt aplikacji Flask działającej w kontenerze Docker.
    ```
    http://localhost:5000/hello
    ```
+
+## 🎥 Prezentacja działania
+![Demo GIF](Presentation.gif)
 
 ## 🔥 Zarządzanie kontenerem
 - **Zatrzymanie kontenera:**
