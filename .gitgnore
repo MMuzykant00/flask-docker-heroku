@@ -1,0 +1,20 @@
+# Ignorowanie plików cache Pythona
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorowanie wirtualnego środowiska
+venv/
+.env
+
+# Ignorowanie plików Flask
+instance/
+
+# Ignorowanie logów i baz danych (jeśli używasz SQLite)
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Ignorowanie plików generowanych przez Dockera
+docker-compose.override.yml
