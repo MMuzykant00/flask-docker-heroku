@@ -18,3 +18,6 @@ db.sqlite3-journal
 
 # Ignorowanie plików generowanych przez Dockera
 docker-compose.override.yml
+
+flask-docker-heroku/
+
